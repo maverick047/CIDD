@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="pg4.css"?>
+<parts>
+	<heading>Hardware Specification</heading>
+	<part>
+		<title>Part : Processor</title>
+		<brand>Brand : Ryzen</brand>
+		<model>Model : Ryzen 3</model>
+		<specification>Specification : 3600X</specification>
+		<price> Price : 16,000</price>
+	</part>
+	<part>
+		<title>Part : Graphic Card</title>
+		<brand>Brand : Nvidia</brand>
+		<model>Model : Nvidia GTX</model>
+		<specification>Specification : GTX 1650</specification>
+		<price>Price : 20,000</price>
+	</part>
+	<part>
+		<title>Part : MotherBoard</title>
+		<brand>Brand : Asus</brand>
+		<model>Model : Asus ROG</model>
+		<specification>Specification : Ryzen Board</specification>
+		<price>Price : 10,000</price>
+	</part>
+	<part>
+		<title>Part : RAM</title>
+		<brand>Brand : Samsung</brand>
+		<model>Model : 32GB</model>
+		<specification>Specification : 3200Mhz</specification>
+		<price>Price : 8,000</price>
+	</part>
+</parts>

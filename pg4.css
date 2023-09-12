@@ -1,0 +1,24 @@
+parts {
+  color: white;
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+}
+heading {
+  color: green;
+  font-size: 40px;
+  background-color: powderblue;
+}
+heading,
+title,
+brand,
+model,
+specification,
+price {
+  display: block;
+}
+title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}

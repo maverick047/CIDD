@@ -1,0 +1,18 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  color: black;
+}
+body {
+  text-align: center;
+  background-color: floralwhite;
+}
+#hide {
+  margin: 0 auto;
+}
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+}

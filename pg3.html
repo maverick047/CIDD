@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="pg3.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <script>
+      function validateForm() {
+        var uname = document.forms["myForm"]["uname"].value;
+        var regno = document.forms["myForm"]["regno"].value;
+        var email = document.forms["myForm"]["email"].value;
+        var pwd = document.forms["myForm"]["pwd"].value;
+        var gender = document.forms["myForm"]["gender"].value;
+        var errorContainer = document.getElementById("error-container");
+        errorContainer.innerHTML = "";
+
+        if (uname == "") {
+          displayError("Name must be filled out!");
+          return false;
+        }
+
+        if (regno == "") {
+          displayError("Register No must be filled out!");
+          return false;
+        }
+
+        if (email == "") {
+          displayError("Email must be filled out!");
+          return false;
+        }
+
+        if (pwd == "") {
+          displayError("Password must be filled out!");
+          return false;
+        }
+
+        if (gender == "") {
+          displayError("Select your gender!");
+          return false;
+        }
+
+        return true;
+      }
+
+      function displayError(errorMessage) {
+        var errorContainer = document.getElementById("error-container");
+        var error = document.createElement("p");
+        error.classList.add("error");
+        error.innerText = errorMessage;
+        errorContainer.appendChild(error);
+      }
+    </script>
+  </head>
+  <body>
+    <header>DEPARTMENT OF IT</header>
+    <img src="./assets/icon1.png" alt="" />
+    <div id="container">
+      <form name="myForm" onsubmit="return validateForm()">
+        <label for="uname">Username :</label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="uname"
+          id="uname"
+        /><br /><br />
+        <label for="regno">Register :</label>
+        <input
+          type="text"
+          placeholder="Reg.No."
+          name="regno"
+          id="regno"
+        /><br /><br /><label for="email">Email :</label>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          id="email"
+        /><br /><br />
+        <label for="uname">Password :</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="pwd"
+          id="pwd"
+        /><br /><br />
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="male" /> Male &ensp; &ensp;
+        <input type="radio" name="gender" id="Female" /> Female <br /><br />
+        <div id="error-container"></div>
+        <input type="submit" value="Login" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>

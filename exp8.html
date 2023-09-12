@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQuery Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#Tweet_head").click(function () {
+          $("#Tweet_text").slideDown("slow");
+          $("#Tweet_text").fadeOut("fast");
+          $("#Tweet_text").fadeIn("fast");
+        });
+      });
+    </script>
+    <style>
+      #Tweet_text,
+      #Tweet_head {
+        padding: 15px;
+        font-size: 15px;
+        text-align: center;
+        background-color: beige;
+        border: 3px solid;
+      }
+      .Tweet_pic {
+        height: 15%;
+        width: 20%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Tweet_head">TWEET</div>
+    <div id="Tweet_text">
+      <p>Ummmm..... Ok</p>
+      <img class="Tweet_pic" src="./assets/img1.jpg" />
+      <br />
+      <center>Tweet by MURPHY</center>
+    </div>
+  </body>
+</html>

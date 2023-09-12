@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Ajax.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          $("p").show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 style="color: rgb(36, 36, 36)">jQUERY SELECTORS</h1>
+    <h2 style="color: rgb(36, 36, 36)">(41120117 - Murphy Surya R)</h2>
+    <div id="test">
+      <h2 style="color: rgb(42, 99, 165)">Sathyabama University</h2>
+      <p style="color: rgb(118, 118, 118)">You can see me!</p>
+      <button
+        id="hide"
+        style="background-color: rgb(42, 99, 165); color: whitesmoke"
+      >
+        Hide</button
+      >&nbsp;
+      <button
+        id="show"
+        style="background-color: rgb(42, 99, 165); color: whitesmoke"
+      >
+        Show</button
+      >&nbsp;
+    </div>
+  </body>
+</html>
