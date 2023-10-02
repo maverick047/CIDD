@@ -1,0 +1,36 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  overflow-y: scroll;
+
+}
+.headin{
+  height:160px;
+  width: 100%;
+  background-color: brown;
+  position: relative;
+  bottom : 22px;
+}
+
+th{
+  color: MistyRose;
+  height: 10vh;
+}
+img{
+  position: relative;
+  left: 1px;
+  top : -37px;
+
+}
+.tables{
+  position: relative;
+  bottom: 24px;
+  background-color:#91091E;
+}
+a{
+  color: MistyRose;
+
+}
+a:hover {
+  background-color: #CD1818;
+}
